@@ -1,0 +1,30 @@
+{
+  "name": "havennow/test-swoole",
+  "description": "Example Swoole",
+  "keywords": ["swoole", "chat"],
+  "require": {
+    "php": ">=8.0",
+    "ext-swoole": ">=4.0.3",
+    "ext-json": "*",
+    "predis/predis": "^1.1"
+  },
+  "authors": [
+    {
+      "name": "havennow",
+      "email": "havennow@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SocketIO\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SocketIOTest\\": "tests"
+    }
+  },
+  "require-dev": {
+    "swoole/ide-helper": "@dev"
+  }
+}
